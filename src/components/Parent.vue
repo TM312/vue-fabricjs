@@ -23,6 +23,6 @@ function setBackgroundColor() {
     <p>This is the text of the input element: {{ canvasText }}</p>
     <p>Below is the Child element</p>
     <Child style="{ border: 2px; }" :canvas-text="canvasText" :export-to-png="exportToPng"
-      :background-color="backgroundColor" /> @update:export-to-png="exportToPng = $event" />
+      :background-color="backgroundColor" @update:export-to-png="exportToPng = $event" />
   </div>
 </template>
